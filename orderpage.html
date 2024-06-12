@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order palced</title>
+</head>
+<style>
+     button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blue;
+        color: antiquewhite;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1em;
+    }
+</style>
+<body>
+    <center>
+        <img src="images/order.png" alt="Placeholder images">
+    </center>
+    <script>
+        function showRating() {
+            var rating = prompt("Please enter your rating (out of 5 stars):");
+            
+            if (rating !== null && !isNaN(rating) && rating >= 1 && rating <= 5) {
+                var stars = '\u2605'.repeat(rating) + '\u2606'.repeat(5 - rating);
+                alert("You rated " + stars);
+            } else {
+                alert("Invalid rating. Please enter a number between 1 and 5.");
+            }
+        }
+        </script>
+        <center>
+        <button onclick="showRating()">Rate Us!</button>
+    </center>
+</body>
+</html>

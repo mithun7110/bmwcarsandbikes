@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Boxes with Images</title>
+<style>
+    .container{        
+        width: 500px;
+        height: 500px;
+        background-color: #ccc;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px 10px;
+        margin: 40px;
+        opacity: .8;
+        display: inline-block;
+    }
+    .container img {
+        max-width: 100%;
+        max-height: 60%;
+        display: block;
+        margin: auto;
+    }
+    body{
+        background: url('images/pic.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 150%;
+    }
+    button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: blue;
+        color: antiquewhite;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1em;
+    }
+       footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="images/bike1.png" alt="Placeholder Image">
+    <h2>BIKES</h2>
+    <button type="button" onclick="window.location.href='bike.html'">bike</button>
+    </div>
+</div>
+
+<div class="container">
+    <img src="images/carr.png" alt="Placeholder Image">
+    <h2>CARS</h2>
+    <button type="button" onclick="window.location.href='cars.html'">car</button>
+    </div>
+</div>
+<footer>
+    <i class="fa-brands fa-google"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <p>© BMW AG 2024</p>
+  </footer>
+</body>
+</html>
